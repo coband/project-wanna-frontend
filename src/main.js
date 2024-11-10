@@ -1,4 +1,10 @@
 import { createApp } from "vue";
 import App from "./App.vue";
+import router from "./router"; // Importiere den Router
 
-createApp(App).mount("#app");
+// Bootstrap CSS und optionales JavaScript importieren
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
+
+createApp(App).use(router).mount("#app"); // Verwende den Router in der App
